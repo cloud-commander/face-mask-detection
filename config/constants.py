@@ -5,8 +5,8 @@
 DRIVE_ML = "/content/drive/My\ Drive/'Machine Learning'"
 DRIVE_DATASETS = DRIVE_ML + "/Datasets"
 DRIVE_PROJECTS = DRIVE_ML + "/Projects"
-DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + "face-mask-detection/" # CHANGE THIS PROJECT TITLE
-DRIVE_DEV = DRIVE_CURRENT_PROJECT + "Dev/"
+DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + "/face-mask-detection" # CHANGE THIS PROJECT TITLE
+DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev"
 
 
 ### Enter the name of the project ###
