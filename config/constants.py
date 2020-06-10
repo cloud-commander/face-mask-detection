@@ -1,16 +1,18 @@
 # Configuration file to set the various directories needed for the project
 
+### Enter the name of the project ###
+PROJECT_DIR = "/Face-Mask-Detection"
+
 
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
 DRIVE_ML = "/content/drive/My\ Drive/'Machine Learning'"
 DRIVE_DATASETS = DRIVE_ML + "/Datasets"
 DRIVE_PROJECTS = DRIVE_ML + "/Projects"
-DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + "/face-mask-detection" # CHANGE THIS PROJECT TITLE
-DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev"
+DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + PROJECT_DIR 
+DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev/"
+DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
 
 
-### Enter the name of the project ###
-PROJECT_DIR = "/Face-Mask-Detection"
 
 #Sets the base directory for our project"
 BASE_DIR = "/content/tensorflow"
