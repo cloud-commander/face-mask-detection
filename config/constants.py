@@ -10,7 +10,7 @@ DRIVE_DEV = DRIVE_CURRENT_PROJECT + "Dev/"
 
 
 ### Enter the name of the project ###
-PROJECT_DIR = "/face-mask"
+PROJECT_DIR = "/Face-Mask-Detection"
 
 #Sets the base directory for our project"
 BASE_DIR = "/content/tensorflow"
