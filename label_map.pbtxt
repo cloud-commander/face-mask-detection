@@ -1,9 +1,0 @@
-item {
-    id: 1
-    name: 'unmasked'
-}
-
-item {
-    id: 2
-    name: 'masked'
-}
