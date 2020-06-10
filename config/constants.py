@@ -41,9 +41,9 @@ DATASET_DIR_PREP = DATASET_DIR + "/prepared"
 DATASET_DIR_PREP_TRAIN = DATASET_DIR_PREP  + "/train"
 DATASET_DIR_PREP_TEST = DATASET_DIR_PREP  + "/test"
 DATASET_DIR_PREP_TRAIN_IMG = DATASET_DIR_PREP_TRAIN + "/images"
-DATASET_DIR_PREP_TRAIN_ANNO = DATASET_DIR_PREP_TRAIN + "/annotations"
+DATASET_DIR_PREP_TRAIN_ANNO = DATASET_DIR_PREP_TRAIN + "/annotations" 	#HOLDS THE XML ANNOTATIONS
 DATASET_DIR_PREP_TEST_IMG = DATASET_DIR_PREP_TEST + "/images"
-DATASET_DIR_PREP_TEST_ANNO = DATASET_DIR_PREP_TEST + "/annotations"
+DATASET_DIR_PREP_TEST_ANNO = DATASET_DIR_PREP_TEST + "/annotations"		#HOLDS THE XML ANNOTATIONS
 DATASET_DIR_PREP_RECORD = DATASET_DIR_PREP + "/record"
 
 #Sets the temp dataset directories
@@ -93,6 +93,7 @@ for DIR in DIRECTORIES:
 ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
 PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
 PARTITION = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/partition.py"
+XML_TO_CSV = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/xml_to_csv.py"
 
 #CONFIG URLS
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
