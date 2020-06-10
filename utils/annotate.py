@@ -2,6 +2,8 @@ import os
 from lxml import etree as ET
 import cv2
 import wget
+import numpy as np
+
 
 url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml'
 #filename = wget.download(url)
