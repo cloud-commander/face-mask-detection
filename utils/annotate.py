@@ -3,6 +3,7 @@ from lxml import etree as ET
 import cv2
 import wget
 import numpy as np
+from PIL import Image, ImageFile
 
 
 url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml'
