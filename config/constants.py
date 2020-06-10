@@ -87,6 +87,16 @@ for DIR in DIRECTORIES:
     os.makedirs(DIR, exist_ok=True)
 
 
+#UTILS
+CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
+ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
+PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
+
+
+#CONFIG
+#TRANING_PIPELINE
+
+
 model = {
   "name": "ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03",
   "model_url": "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz",
