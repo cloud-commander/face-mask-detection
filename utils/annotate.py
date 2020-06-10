@@ -1,3 +1,12 @@
+import os
+from lxml import etree as ET
+import cv2
+import wget
+
+url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml'
+#filename = wget.download(url)
+face_cascade = cv2.CascadeClassifier(wget.download(url))
+
 def annotate(IMG_INPUT,XML_OUTPUT):
 	for subdir, dirs, files in os.walk(IMG_INPUT):
 		for file in files:
