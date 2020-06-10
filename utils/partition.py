@@ -1,3 +1,5 @@
+# Partitions a dataset into train and test sets
+
 import shutil
 import os
 
