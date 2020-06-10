@@ -4,6 +4,7 @@ import shutil
 import os
 import re
 import math
+import random
 
 
 def partition_dir(src_img, src_xml, train_img, train_xml, test_img, test_xml, ratio):
