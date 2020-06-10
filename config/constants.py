@@ -91,6 +91,7 @@ for DIR in DIRECTORIES:
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
 ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
 PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
+PARTITION = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/partition.py"
 
 #DATASET URLS
 UNMASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
