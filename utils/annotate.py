@@ -58,7 +58,7 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 							ET.SubElement(root, "segmented").text = "0"
 
 							obj=ET.SubElement(root, "object")
-							ET.SubElement(obj, "name").text = subdir_name
+							ET.SubElement(obj, "name").text = CLASS
 							ET.SubElement(obj, "pose").text = "Frontal"
 							ET.SubElement(obj, "truncated").text = "0"
 							ET.SubElement(obj, "difficult").text = "0"
