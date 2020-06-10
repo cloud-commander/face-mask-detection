@@ -32,7 +32,7 @@ DATASET_DIR = LEARN_DIR + "/dataset"
 DATASET_DIR_UNPREP = DATASET_DIR + "/unprepared"
 DATASET_DIR_UNPREP_IMG = DATASET_DIR_UNPREP + "/images"
 DATASET_DIR_UNPREP_ANNO = DATASET_DIR_UNPREP + "/annotations"
-DATASET_DIR_UNPREP_MASKS = DATASET_DIR_UNPREP + "/masks"
+DATASET_DIR_UNPREP_MASKS = DATASET_DIR_UNPREP + "/mask"
 
 #Sets the prepared dataset directories
 DATASET_DIR_PREP = DATASET_DIR + "/prepared"
@@ -87,14 +87,15 @@ for DIR in DIRECTORIES:
     os.makedirs(DIR, exist_ok=True)
 
 
-#UTILS
+#UTILS URLS
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
 ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
 PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
 
-
-#CONFIG
-#TRANING_PIPELINE
+#DATASET URLS
+UNMASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
+MASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_01.zip"
+MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
 
 
 model = {
