@@ -12,7 +12,7 @@ url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/mas
 #filename = wget.download(url)
 face_cascade = cv2.CascadeClassifier(wget.download(url))
 
-def annotate(IMG_INPUT,XML_OUTPUT):
+def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 	for subdir, dirs, files in os.walk(IMG_INPUT):
 		for file in files:
 			
@@ -42,7 +42,7 @@ def annotate(IMG_INPUT,XML_OUTPUT):
 							subdir_path, subdir_name = os.path.split(subdir)
 
 							root = ET.Element("annotation",verified="yes")
-							ET.SubElement(root, "folder").text=IMG_INPUT
+							ET.SubElement(root, "folder").text=CLASS
 
 							ET.SubElement(root, "filename").text = img_name
 							#ET.SubElement(root, "path").text = img_path
