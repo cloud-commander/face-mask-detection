@@ -1,6 +1,14 @@
 # Configuration file to set the various directories needed for the project
 
 
+### Your Google Drive Folders - ***CREATE THESE MANUALLY***
+DRIVE_ML = "/content/drive/My\ Drive/'Machine Learning'"
+DRIVE_DATASETS = DRIVE_ML + "/Datasets"
+DRIVE_PROJECTS = DRIVE_ML + "/Projects"
+DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + "Face-Mask-Detection/" # CHANGE THIS PROJECT TITLE
+DRIVE_DEV = DRIVE_CURRENT_PROJECT + "Dev/"
+
+
 ### Enter the name of the project ###
 PROJECT_DIR = "/face-mask"
 
@@ -66,7 +74,7 @@ DIRECTORIES = [PRE_PROCESS_DIR, DATASET_DIR_UNPREP_IMG, \
                DATASET_DIR_UNPREP_ANNO, DATASET_DIR_PREP_TRAIN_IMG, \
                DATASET_DIR_PREP_TRAIN_ANNO, DATASET_DIR_PREP_TEST_IMG, \
                DATASET_DIR_PREP_TEST_ANNO, DATASET_DIR_PREP_RECORD, \
-			         DATASET_DIR_TMP1, DATASET_DIR_TMP2, PRE_MODEL, \
+			   DATASET_DIR_TMP1, DATASET_DIR_TMP2, PRE_MODEL, \
                CONFIG_DIR, INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, \
                TF_LITE_MODEL, TF_JS_MODEL  ]
 
