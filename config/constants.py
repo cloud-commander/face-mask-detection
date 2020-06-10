@@ -1,7 +1,9 @@
 # Configuration file to set the various directories needed for the project
 
-### Enter the name of the project ###
-PROJECT_DIR = "/Face-Mask-Detection"
+### Enter the name of the project ####
+PROJECT_DIR = "/Face-Mask-Detection" #
+######################################
+
 
 
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
@@ -11,8 +13,6 @@ DRIVE_PROJECTS = DRIVE_ML + "/Projects"
 DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + PROJECT_DIR 
 DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev/"
 DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
-
-
 
 #Sets the base directory for our project"
 BASE_DIR = "/content/tensorflow"
@@ -42,8 +42,8 @@ DATASET_DIR_PREP_TRAIN = DATASET_DIR_PREP  + "/train"
 DATASET_DIR_PREP_TEST = DATASET_DIR_PREP  + "/test"
 DATASET_DIR_PREP_TRAIN_IMG = DATASET_DIR_PREP_TRAIN + "/images"
 DATASET_DIR_PREP_TRAIN_ANNO = DATASET_DIR_PREP_TRAIN + "/annotations"
-DATASET_DIR_PREP_TEST_IMG = DATASET_DIR_PREP_TRAIN + "/images"
-DATASET_DIR_PREP_TEST_ANNO = DATASET_DIR_PREP_TRAIN + "/annotations"
+DATASET_DIR_PREP_TEST_IMG = DATASET_DIR_PREP_TEST + "/images"
+DATASET_DIR_PREP_TEST_ANNO = DATASET_DIR_PREP_TEST + "/annotations"
 DATASET_DIR_PREP_RECORD = DATASET_DIR_PREP + "/record"
 
 #Sets the temp dataset directories
