@@ -1,3 +1,5 @@
+#Generates XML Annotations for images that contain human faces
+
 import os
 from lxml import etree as ET
 import cv2
