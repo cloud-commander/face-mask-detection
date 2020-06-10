@@ -1,3 +1,5 @@
+#Converts XML annotations to CSV 
+
 import pandas as pd
 import xml.etree.ElementTree as ET
 import glob
