@@ -1,4 +1,4 @@
-def annotate(IMG_INPUT,XML_OUTPUT)
+def annotate(IMG_INPUT,XML_OUTPUT):
 	for subdir, dirs, files in os.walk(IMG_INPUT):
 		for file in files:
 			
