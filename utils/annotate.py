@@ -1,7 +1,6 @@
-def	annotate(IMG_INPUT,XML_OUTPUT)
+def annotate(IMG_INPUT,XML_OUTPUT)
 	for subdir, dirs, files in os.walk(IMG_INPUT):
 		for file in files:
-
 			
 			img_path=os.path.join(subdir, file)
 			img_name=os.path.basename(img_path)
