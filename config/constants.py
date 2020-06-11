@@ -98,6 +98,7 @@ XML_TO_CSV = "https://raw.githubusercontent.com/cloud-commander/face-mask-detect
 #CONFIG URLS
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
 LABEL_MAP = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/label_map.pbtxt"
+GET_TF_MODELS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/get_tf_models.sh"
 
 #DATASET URLS
 UNMASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
