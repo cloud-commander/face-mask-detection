@@ -89,6 +89,10 @@ import os
 for DIR in DIRECTORIES:
     os.makedirs(DIR, exist_ok=True)
 
+#Tensors for model conversion
+INPUT_TENSORS = "normalized_input_image_tensor"
+OUTPUT_TENSORS = "TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3"
+
 
 #UTILS URLS
 ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
@@ -113,7 +117,6 @@ pretrained_model_key = {
   "config_url": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/ssd_mobilenet_v2_quantized_300x300.config"
 }
 
-#thisdict["model"] = 2018
 
 utils = {
     "cascade": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml",
