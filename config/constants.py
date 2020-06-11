@@ -6,6 +6,7 @@ PROJECT_DIR = "/Face-Mask-Detection" #
 
 
 
+
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
 DRIVE_ML = "/content/drive/My\ Drive/'Machine Learning'"
 DRIVE_DATASETS = DRIVE_ML + "/Datasets"
@@ -106,7 +107,7 @@ MASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/
 MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
 
 
-model = {
+pretrained_model_key = {
   "name": "ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03",
   "model_url": "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz",
   "config_url": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/ssd_mobilenet_v2_quantized_300x300.config"
