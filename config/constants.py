@@ -15,7 +15,6 @@ DRIVE_PROJECTS = DRIVE_ML + "/Projects"
 DRIVE_TF = DRIVE_ML + "/TensorFlow"
 DRIVE_TF_MODELS = DRIVE_TF + "/models"
 DRIVE_TF_RESEARCH = DRIVE_TF + "/research"
-DRIVE_PRE_MODEL = DRIVE_TF + "/pre-trained-model"
 DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + PROJECT_DIR 
 DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev/"
 DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
@@ -53,6 +52,8 @@ DATASET_DIR_TMP2 = DATASET_DIR + "/tmp2"
 #Sets the preprocessing scripts directory
 PRE_PROCESS_DIR = LEARN_DIR + "/scripts/preprocessing"
 
+PRE_TRAINED_MODEL = LEARN_DIR + "/pre-trained-model"
+
 #Sets the training directory
 TRAIN_DIR = LEARN_DIR + "/training"
 
@@ -81,7 +82,7 @@ DIRECTORIES = [PRE_PROCESS_DIR, DATASET_DIR_UNPREP_IMG, \
                DATASET_DIR_PREP_TRAIN_ANNO, DATASET_DIR_PREP_TEST_IMG, \
                DATASET_DIR_PREP_TEST_ANNO, DATASET_DIR_PREP_RECORD, \
 			   DATASET_DIR_TMP1, DATASET_DIR_TMP2, CONFIG_DIR,  \
-               INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, \
+               INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, PRE_TRAINED_MODEL \
                TF_LITE_MODEL, TF_JS_MODEL  ]
 
 #create the required directories
@@ -99,26 +100,18 @@ ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detectio
 PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
 PARTITION = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/partition.py"
 XML_TO_CSV = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/xml_to_csv.py"
+TF_RECORD = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/generate_tfrecord.py"
+CASCADE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml"
 
 #CONFIG URLS
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
 LABEL_MAP = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/label_map.pbtxt"
+PIPELINE_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/pipeline.config"
 
 
 #DATASET URLS
 UNMASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
 MASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_01.zip"
 MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
+PRETRAINED_MODEL_URL = "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
 
-
-pretrained_model_key = {
-  "name": "ssd_mobilenet_v2_quantized_300x300",
-  "model_url": "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz",
-  "config_url": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/ssd_mobilenet_v2_quantized_300x300.config"
-}
-
-
-utils = {
-    "cascade": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml",
-    "generate": "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/generate_tfrecord.py"
-}
