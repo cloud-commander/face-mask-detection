@@ -110,8 +110,8 @@ PIPELINE_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-d
 
 
 #DATASET URLS
-UNMASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
-MASKED = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_01.zip"
-MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
+UNMASKED_FACES_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
+MASKED_FACES_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_01.zip"
+MASKS_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
 PRETRAINED_MODEL_URL = "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
 
