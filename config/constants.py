@@ -23,9 +23,6 @@ DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
 #Sets the base directory for our project"
 BASE_DIR = "/content/tensorflow"
 
-#Sets the pre-trained model directory
-
-
 #Sets the workspace directory 
 OBJ_DET_DIR = BASE_DIR + "/workspace"
 
@@ -83,8 +80,8 @@ DIRECTORIES = [PRE_PROCESS_DIR, DATASET_DIR_UNPREP_IMG, \
                DATASET_DIR_UNPREP_ANNO, DATASET_DIR_PREP_TRAIN_IMG, \
                DATASET_DIR_PREP_TRAIN_ANNO, DATASET_DIR_PREP_TEST_IMG, \
                DATASET_DIR_PREP_TEST_ANNO, DATASET_DIR_PREP_RECORD, \
-			   DATASET_DIR_TMP1, DATASET_DIR_TMP2, PRE_MODEL, \
-               CONFIG_DIR, INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, \
+			   DATASET_DIR_TMP1, DATASET_DIR_TMP2, CONFIG_DIR,  \
+               INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, \
                TF_LITE_MODEL, TF_JS_MODEL  ]
 
 #create the required directories
