@@ -101,6 +101,7 @@ PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detec
 PARTITION = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/partition.py"
 XML_TO_CSV = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/xml_to_csv.py"
 TF_RECORD = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/generate_tfrecord.py"
+MOVE_FILES = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/move_files.py"
 CASCADE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml"
 
 #CONFIG URLS
