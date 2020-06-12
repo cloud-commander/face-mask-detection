@@ -19,4 +19,4 @@ def move_files(source_dir,destination_dir,allowed_list):
           if os.path.splitext(f)[0] == item:
             shutil.move(source_dir+"/"+f, destination_dir+"/")
             counter += 1 
-     print("Files moved: " + counter)
+    print("Files moved: " + counter)
