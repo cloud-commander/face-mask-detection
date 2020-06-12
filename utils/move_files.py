@@ -11,10 +11,12 @@ def compare_intersect(DIR1, DIR2):
     return list(frozenset(x).intersection(y))
 
 def move_files(source_dir,destination_dir,allowed_list):
+    counter = 0
     files = os.listdir(source_dir)
     for f in files:
       if f.endswith(('.png', '.jpg', '.jpeg', '.xml')):
         for item in allowed_list:
-          print(item)
           if os.path.splitext(f)[0] == item:
             shutil.move(source_dir+"/"+f, destination_dir+"/")
+            counter += 1 
+     print("Files moved: " + counter)
