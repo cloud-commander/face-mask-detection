@@ -8,9 +8,14 @@ PROJECT_DIR = "/Face-Mask-Detection" #
 
 
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
-DRIVE_ML = "/content/drive/My\ Drive/'Machine Learning'"
+DRIVE_BASE = "/content/drive/My\ Drive"
+DRIVE_ML = DRIVE_BASE + "'Machine Learning'"
 DRIVE_DATASETS = DRIVE_ML + "/Datasets"
 DRIVE_PROJECTS = DRIVE_ML + "/Projects"
+DRIVE_TF = DRIVE_ML + "/TensorFlow"
+DRIVE_TF_MODELS = DRIVE_TF + "/models"
+DRIVE_TF_RESEARCH = DRIVE_TF + "/research/"
+DRIVE_PRE_MODEL = DRIVE_TF + "/pre-trained-model"
 DRIVE_CURRENT_PROJECT = DRIVE_PROJECTS + PROJECT_DIR 
 DRIVE_DEV = DRIVE_CURRENT_PROJECT + "/Dev/"
 DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
@@ -19,10 +24,7 @@ DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
 BASE_DIR = "/content/tensorflow"
 
 #Sets the pre-trained model directory
-PRE_MODEL = BASE_DIR + "/models/pre-trained-model"
 
-#Sets the preprocessing scripts directory
-PRE_PROCESS_DIR = BASE_DIR + "/scripts/preprocessing"
 
 #Sets the workspace directory 
 OBJ_DET_DIR = BASE_DIR + "/workspace"
@@ -51,7 +53,8 @@ DATASET_DIR_PREP_RECORD = DATASET_DIR_PREP + "/record"
 DATASET_DIR_TMP1 = DATASET_DIR + "/tmp1"
 DATASET_DIR_TMP2 = DATASET_DIR + "/tmp2"
 
-
+#Sets the preprocessing scripts directory
+PRE_PROCESS_DIR = LEARN_DIR + "/scripts/preprocessing"
 
 #Sets the training directory
 TRAIN_DIR = LEARN_DIR + "/training"
