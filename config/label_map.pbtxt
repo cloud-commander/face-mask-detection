@@ -1,9 +1,9 @@
 item {
     id: 1
-    name: 'unmasked'
+    name: 'UNMASKED'
 }
 
 item {
     id: 2
-    name: 'masked'
+    name: 'MASKED'
 }
