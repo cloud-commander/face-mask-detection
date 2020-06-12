@@ -38,9 +38,9 @@ FLAGS = flags.FLAGS
 # TO-DO replace this with label map
 # for multiple labels add more else if statements
 def class_text_to_int(row_label):
-    if row_label == 'unmasked':
+    if row_label == 'UNMASKED':
         return 1
-    elif row_label == 'masked':
+    elif row_label == 'MASKED':
         return 2
     else:
        0
