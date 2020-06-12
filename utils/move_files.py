@@ -1,4 +1,5 @@
 import os
+import shutil
 
 def strip_extension(list):
      striped = [os.path.splitext(x)[0] for x in list]
