@@ -9,7 +9,7 @@ PROJECT_DIR = "/Face-Mask-Detection" #
 
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
 DRIVE_BASE = "/content/drive/My\ Drive"
-DRIVE_ML = DRIVE_BASE + "'Machine Learning'"
+DRIVE_ML = DRIVE_BASE + "/'Machine Learning'"
 DRIVE_DATASETS = DRIVE_ML + "/Datasets"
 DRIVE_PROJECTS = DRIVE_ML + "/Projects"
 DRIVE_TF = DRIVE_ML + "/TensorFlow"
