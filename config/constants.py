@@ -58,7 +58,7 @@ PRE_TRAINED_MODEL = LEARN_DIR + "/pre-trained-model"
 TRAIN_DIR = LEARN_DIR + "/training"
 
 #Sets the config file directory
-CONFIG_DIR = TRAIN_DIR + "/config"
+CONFIG_DIR = TRAIN_DIR + "/config/"
 
 #Sets the training model directory
 MDL_DIR = TRAIN_DIR + "/model"
