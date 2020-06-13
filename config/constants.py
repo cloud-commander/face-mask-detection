@@ -52,7 +52,7 @@ DATASET_DIR_TMP2 = DATASET_DIR + "/tmp2"
 #Sets the preprocessing scripts directory
 PRE_PROCESS_DIR = LEARN_DIR + "/scripts/preprocessing"
 
-PRE_TRAINED_MODEL = LEARN_DIR + "/pre-trained-model"
+PRE_TRAINED_MODEL = "/content/models/pre-trained-model"
 
 #Sets the training directory
 TRAIN_DIR = LEARN_DIR + "/training"
@@ -82,7 +82,7 @@ DIRECTORIES = [PRE_PROCESS_DIR, DATASET_DIR_UNPREP_IMG, \
                DATASET_DIR_PREP_TRAIN_ANNO, DATASET_DIR_PREP_TEST_IMG, \
                DATASET_DIR_PREP_TEST_ANNO, DATASET_DIR_PREP_RECORD, \
 	       DATASET_DIR_TMP1, DATASET_DIR_TMP2, CONFIG_DIR,  \
-               INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, PRE_TRAINED_MODEL, \
+               INF_GRAPH, TF_LITE_GRAPH, CKPT_DIR, \
                TF_LITE_MODEL, TF_JS_MODEL  ]
 
 #create the required directories
