@@ -116,3 +116,8 @@ MASKED_FACES_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-m
 MASKS_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
 PRETRAINED_MODEL_URL = "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
 
+
+#PRE TRAINED MODELS - COMMENT OUT AS APPROPRIATE
+MODEL_NAME="facessd_mobilenet_v2_quantized_320x320_open_image_v4"
+MODEL_URL="http://download.tensorflow.org/models/object_detection/facessd_mobilenet_v2_quantized_320x320_open_image_v4.tar.gz"
+MODEL_DIR= "/content/models/" + MODEL_NAME
