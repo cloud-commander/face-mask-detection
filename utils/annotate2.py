@@ -20,7 +20,7 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 
 				img = face_recognition.load_image_file(img_path)
 				face_locations = face_recognition.face_locations(img, number_of_times_to_upsample=0, model="cnn")
-							
+				h,w,bpp = np.shape(img)			
 
 
 	#            g=show_bboxes(imgp, b, landmarks)
