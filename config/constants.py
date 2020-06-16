@@ -5,8 +5,6 @@ PROJECT_DIR = "/Face-Mask-Detection" #
 ######################################
 
 
-
-
 ### Your Google Drive Folders - ***CREATE THESE MANUALLY***
 DRIVE_BASE = "/content/drive/My\ Drive"
 DRIVE_ML = DRIVE_BASE + "/'Machine Learning'"
@@ -94,7 +92,6 @@ for DIR in DIRECTORIES:
 INPUT_TENSORS = "normalized_input_image_tensor"
 OUTPUT_TENSORS = "TFLite_Detection_PostProcess,TFLite_Detection_PostProcess:1,TFLite_Detection_PostProcess:2,TFLite_Detection_PostProcess:3"
 
-
 #UTILS URLS
 ANNOTATE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/annotate.py"
 PLACE_MASKS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/place_masks.py"
@@ -107,17 +104,16 @@ CASCADE = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection
 #CONFIG URLS
 CONSTANTS = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/constants.py"
 LABEL_MAP = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/label_map.pbtxt"
-PIPELINE_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/pipeline.config"
-
 
 #DATASET URLS
 UNMASKED_FACES_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_00.zip"
 MASKED_FACES_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/1k_faces_01.zip"
 MASKS_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/mask_photos.tar.xz"
-PRETRAINED_MODEL_URL = "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
-
 
 #PRE TRAINED MODELS - COMMENT OUT AS APPROPRIATE
-MODEL_NAME="facessd_mobilenet_v2_quantized_320x320_open_image_v4"
-MODEL_URL="http://download.tensorflow.org/models/object_detection/facessd_mobilenet_v2_quantized_320x320_open_image_v4.tar.gz"
-MODEL_DIR= "/content/models/" + MODEL_NAME
+PRETRAINED_MODEL_NAME="facessd_mobilenet_v2_quantized_320x320_open_image_v4"
+PRETRAINED_MODEL_URL="http://download.tensorflow.org/models/object_detection/facessd_mobilenet_v2_quantized_320x320_open_image_v4.tar.gz"
+PRETRAINED_MODEL_DIR= "/content/models/" + PRETRAINED_MODEL_NAME
+PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/pipeline.config"
+
+#PRETRAINED_MODEL_URL = "http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
