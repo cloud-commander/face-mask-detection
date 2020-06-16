@@ -65,6 +65,9 @@ DRIVE_COMPLETE = DRIVE_CURRENT_PROJECT + "/Complete/"
 #Sets the base directory for our project"
 BASE_DIR = "/content"
 
+#Folder that will hold the models from TensorFlow
+TF_MODEL_DIR = BASE_DIR + "/models" 
+
 #Sets the project folder directory
 LEARN_DIR = BASE_DIR + PROJECT_DIR
 
