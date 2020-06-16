@@ -50,7 +50,7 @@ DATASET_DIR_TMP2 = DATASET_DIR + "/tmp2"
 #Sets the preprocessing scripts directory
 PRE_PROCESS_DIR = LEARN_DIR + "/scripts/preprocessing"
 
-PRE_TRAINED_MODEL = "/content/models/pre-trained-model"
+PRE_TRAINED_MODEL_DIR = "/content/models/pre-trained-model"
 
 #Sets the training directory
 TRAIN_DIR = LEARN_DIR + "/training"
