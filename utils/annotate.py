@@ -22,15 +22,12 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 				face_locations = face_recognition.face_locations(img, number_of_times_to_upsample=0, model="cnn")
 				h,w,bpp = np.shape(img)			
 
-
-	#            g=show_bboxes(imgp, b, landmarks)
 				#print(len(face_locations))
 				if len(face_locations) == 1 :
 					try :
 
 						for face_location in face_locations:
-							#face = img[int(bounding_boxes[1]):int(bounding_boxes[3]),
-							#int(bounding_boxes[0]):int(bounding_boxes[2])]
+							
 							top, right, bottom, left = face_location
 							
 							subdir_path, subdir_name = os.path.split(subdir)
