@@ -6,15 +6,8 @@ import cv2
 import wget
 import numpy as np
 from PIL import Image, ImageFile
+import face_recognition
 
-
-#url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml'
-#url = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/haarcascade_frontalface_default.xml"
-
-url = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/haarcascade_frontalface_alt_tree.xml"
-
-#filename = wget.download(url)
-face_cascade = cv2.CascadeClassifier(wget.download(url))
 
 def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 	for subdir, dirs, files in os.walk(IMG_INPUT):
@@ -25,23 +18,20 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 
 			if img_path.lower().endswith(('.png', '.jpg', '.jpeg')):
 
-				img = cv2.imread(img_path)
-				gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-				h,w,bpp = np.shape(img)
-				imgp = Image.open(img_path)
-	#            b, landmarks = detect_faces(imgp)
-				faces = face_cascade.detectMultiScale(gray, 1.3, 5)
+				img = face_recognition.load_image_file(img_path)
+				face_locations = face_recognition.face_locations(img, number_of_times_to_upsample=0, model="cnn")
+							
 
 
 	#            g=show_bboxes(imgp, b, landmarks)
-				#print(len(faces))
-				if len(faces) == 1 :
+				#print(len(face_locations))
+				if len(face_locations) == 1 :
 					try :
 
-						for bounding_boxes in faces:
-							face = img[int(bounding_boxes[1]):int(bounding_boxes[3]),
-							int(bounding_boxes[0]):int(bounding_boxes[2])]
-
+						for face_location in face_locations:
+							#face = img[int(bounding_boxes[1]):int(bounding_boxes[3]),
+							#int(bounding_boxes[0]):int(bounding_boxes[2])]
+							top, right, bottom, left = face_location
 							
 							subdir_path, subdir_name = os.path.split(subdir)
 
@@ -68,10 +58,10 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 							ET.SubElement(obj, "difficult").text = "0"
 
 							box=ET.SubElement(obj, "bndbox")
-							ET.SubElement(box, "xmin").text = str(int(bounding_boxes[0]))
-							ET.SubElement(box, "ymin").text = str(int(bounding_boxes[1]))
-							ET.SubElement(box, "xmax").text = str(int(bounding_boxes[2])+int(bounding_boxes[1]))
-							ET.SubElement(box, "ymax").text = str(int(bounding_boxes[3]))
+							ET.SubElement(box, "xmin").text = str(top)
+							ET.SubElement(box, "ymin").text = str(right)
+							ET.SubElement(box, "xmax").text = str(bottom)
+							ET.SubElement(box, "ymax").text = str(left)
 
 							tree = ET.ElementTree(root)
 							tree.write(os.path.join(XML_OUTPUT, os.path.splitext(img_name)[0] + '.xml'))
