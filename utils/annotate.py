@@ -8,10 +8,9 @@ import numpy as np
 from PIL import Image, ImageFile
 
 
-#url = 'https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/lbpcascade_frontalface_improved.xml'
-url = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/haarcascade_frontalface_default.xml"
-
-#url = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/utils/haarcascade_frontalface_alt_tree.xml"
+#url = 'https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/lbpcascade_frontalface_improved.xml'
+#url = "https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml"
+url = "https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_alt.xml"
 
 #filename = wget.download(url)
 face_cascade = cv2.CascadeClassifier(wget.download(url))
