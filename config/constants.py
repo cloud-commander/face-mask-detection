@@ -22,13 +22,13 @@
 #				- annotations
 #				- mask
 #			- prepared
+#				- record
 #				- train
 #					- images
 #					- annotations
 #				- test
 #					- images
-#					- annotations
-#			- records	
+#					- annotations					
 #			- tmp1
 #			- tmp2							
 #		- scripts
