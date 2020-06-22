@@ -19,7 +19,7 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 			if img_path.lower().endswith(('.png', '.jpg', '.jpeg')):
 
 				img = face_recognition.load_image_file(img_path)
-				face_locations = face_recognition.face_locations(img, number_of_times_to_upsample=0, model="cnn")
+				face_locations = face_recognition.face_locations(img, number_of_times_to_upsample=2, model="cnn")
 				h,w,bpp = np.shape(img)			
 
 				#print(len(face_locations))
