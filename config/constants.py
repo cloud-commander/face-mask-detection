@@ -142,15 +142,15 @@ MASKS_DATASET = "https://raw.githubusercontent.com/cloud-commander/face-mask-det
 #PRETRAINED_MODEL_DIR= "/content/models/" + PRETRAINED_MODEL_NAME
 #PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/face_pipeline.config"
 
-PRETRAINED_MODEL_NAME="ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18"
-PRETRAINED_MODEL_URL="http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18.tar.gz"
-PRETRAINED_MODEL_DIR= "/content/models/" + PRETRAINED_MODEL_NAME
-PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/mobilenet_v1_pipeline.config"
-
-#PRETRAINED_MODEL_NAME="ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03"
-#PRETRAINED_MODEL_URL="http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
+#PRETRAINED_MODEL_NAME="ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18"
+#PRETRAINED_MODEL_URL="http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_quantized_300x300_coco14_sync_2018_07_18.tar.gz"
 #PRETRAINED_MODEL_DIR= "/content/models/" + PRETRAINED_MODEL_NAME
-#PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/mobilenet_v2_pipeline.config"
+#PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/mobilenet_v1_pipeline.config"
+
+PRETRAINED_MODEL_NAME="ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03"
+PRETRAINED_MODEL_URL="http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v2_quantized_300x300_coco_2019_01_03.tar.gz"
+PRETRAINED_MODEL_DIR= "/content/models/" + PRETRAINED_MODEL_NAME
+PRETRAINED_MODEL_CONFIG = "https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/config/mobilenet_v2_pipeline.config"
 
 # Loads a list with the edges of the required directory structure
 DIRECTORIES = [PRE_PROCESS_DIR, DATASET_DIR_UNPREP_IMG, \
