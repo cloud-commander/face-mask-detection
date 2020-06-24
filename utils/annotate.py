@@ -55,10 +55,10 @@ def annotate(IMG_INPUT,XML_OUTPUT, CLASS):
 							ET.SubElement(obj, "difficult").text = "0"
 
 							box=ET.SubElement(obj, "bndbox")
-							ET.SubElement(box, "xmin").text = str(top)
-							ET.SubElement(box, "ymin").text = str(right)
-							ET.SubElement(box, "xmax").text = str(bottom)
-							ET.SubElement(box, "ymax").text = str(left)
+							ET.SubElement(box, "xmin").text = str(left)
+							ET.SubElement(box, "ymin").text = str(top)
+							ET.SubElement(box, "xmax").text = str(right)
+							ET.SubElement(box, "ymax").text = str(bottom)
 
 							tree = ET.ElementTree(root)
 							tree.write(os.path.join(XML_OUTPUT, os.path.splitext(img_name)[0] + '.xml'))
