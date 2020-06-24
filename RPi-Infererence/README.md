@@ -13,7 +13,7 @@ If you wish to make use of a prebuilt Docker image then you can access it from D
 Make sure you have your webcam and Coral USB plugged in.
 
 To run the container, enter the following command
-`docker run -it -p 80:5000 -v /dev/bus/usb:/dev/bus/usb cloudcommanderdotnet/rpitpuinference:latest`
+`docker run -t -i --privileged -p 80:5000 -v /dev/bus/usb:/dev/bus/usb cloudcommanderdotnet/rpitpuinference:latest`
 
 The container is started in privileged mode, all the RPi USB devices are mapped to the container and port 5000 is mapped to port 80.
 
