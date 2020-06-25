@@ -5,6 +5,6 @@ You can find the complete article around this project on my blog https://blog.cl
 High Level Overview
 
 - Generate training data
-- Train TF Lite model optimised for Edge TPU
+- Train TF Lite model with Object Detection API, optimised for Edge TPU
 - Run Inferences with Docker container
 
