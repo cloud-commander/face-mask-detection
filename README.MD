@@ -1,5 +1,7 @@
 #tensorflow #tflite #edgetpu #objectdetection #facemaskdetector
 
+FACE MASK DETECTOR
+
 You can find the complete article around this project on my blog https://blog.cloudcommander.net/
 
 High Level Overview
