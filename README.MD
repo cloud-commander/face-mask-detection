@@ -8,7 +8,7 @@ You can find the complete article around this project on my blog https://blog.cl
 
 ![Edge TPU](https://lh3.googleusercontent.com/vvBAqSnXyg3h9yS0JLyVehhV-e__3NFbZ6q7Ft-rEZp-9wDTVZ49yjuYJwfa4jQZ-RVnChHMr-DDC0T_fTxVyQg3iBMD-icMQooD6A=w630-rw)
 
-![Inference](https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/face_mask_v1.gif)
+![Inference](https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/face_masks_v1.gif)
 High Level Overview
 
 - Using Google Colab
