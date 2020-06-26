@@ -3,6 +3,8 @@
 ### Overview
 This container packages all the requirements needed to perform inference using a Tensorflow Lite model trained on the Object Detection API and assumes you are making use of a Google Coral Edge TPU. 
 
+![Edge TPU](https://lh3.googleusercontent.com/vvBAqSnXyg3h9yS0JLyVehhV-e__3NFbZ6q7Ft-rEZp-9wDTVZ49yjuYJwfa4jQZ-RVnChHMr-DDC0T_fTxVyQg3iBMD-icMQooD6A=w630-rw)
+
 You will also require a webcam plugged into your RPi although you can change the source to a network based camera if you wish.
 
 ### Prebuilt Container
