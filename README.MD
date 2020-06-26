@@ -1,6 +1,6 @@
 #tensorflow #tflite #edgetpu #objectdetection #facemaskdetector
 
-FACE MASK DETECTOR
+# FACE MASK DETECTOR
 
 ![Inference](https://raw.githubusercontent.com/cloud-commander/face-mask-detection/master/data/face_masks_v1.gif)
 
