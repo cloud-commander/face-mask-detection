@@ -24,6 +24,6 @@ Now you just have to navigate to the IP address of your RPi in a web browser to 
 ### Building your own image
 I have provided the Dockerfile if you wish to make your own image that employs a custom model.
 
-As building a model on the RPi is painfully slow, I suggest you make use of the cross-compiling functionality of buildx within Docker to build the image on your much faster x86 device instead.
+As building an image on the RPi is painfully slow, I suggest you make use of the cross-compiling functionality of buildx within Docker to build the image on your much faster x86 device instead.
 
 `docker buildx build --platform linux/arm/v7 -t YOURDOCKERHUB/image:latest --push . `
